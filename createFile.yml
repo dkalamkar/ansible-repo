@@ -5,9 +5,9 @@
      path: "/home/{{filename}}"
      state: touch
      tags:
-  - always
- file:
+     - always
+    file:
      path: "/tmp/{{filename}}"
      state: touch
      tags:
-  - tmp
+     - tmp
