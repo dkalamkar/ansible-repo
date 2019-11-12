@@ -5,13 +5,13 @@
      path: "/home/{{filename}}"
      state: touch
      tags:
-     - always
+     - tag1
 
-- hosts: all
-  tasks:     
-   - name: Ansible create file if it doesn't exist example in tmp folder  
-    file:
-     path: "/tmp/{{filename}}"
-     state: touch
-     tags:
-     - tmp
+  - name: Ansible create file with content example
+    copy:
+      dest: "/home/{{filename}}"
+      content: |
+        dog1
+        tiger
+        tags:
+        - tag2
