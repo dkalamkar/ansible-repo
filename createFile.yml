@@ -4,3 +4,10 @@
     file:
      path: "/home/{{filename}}"
      state: touch
+     tags:
+  - always
+ file:
+     path: "/tmp/{{filename}}"
+     state: touch
+     tags:
+  - tmp
