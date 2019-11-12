@@ -16,3 +16,23 @@
       
     tags:
     - tag2
+    
+  - name: Ansible create file with content2
+    copy:
+      dest: "/home/{{filename}}"
+      content: |
+        tam
+        jam
+      
+    tags:
+    - tag3
+    
+  - name: Ansible create file with content3
+    copy:
+      dest: "/home/{{filename}}"
+      content: |
+        bird
+        bird1
+      
+    tags:
+    - tag4    
