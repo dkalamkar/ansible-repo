@@ -6,6 +6,8 @@
      state: touch
      tags:
      - always
+     
+   - name: Ansible create file if it doesn't exist example in tmp folder  
     file:
      path: "/tmp/{{filename}}"
      state: touch
