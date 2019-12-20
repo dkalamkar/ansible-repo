@@ -4,14 +4,3 @@
     file:
      path: "/tmp/{{filename}}"
      state: touch
-    tags: tag1
-    
-- hosts: all
-  tasks:
-  - name: Ansible create file with content example
-    copy:
-      dest: "/tmp/{{filename}}"
-      content: |
-        dog1
-        tiger
-    tags: tag2
